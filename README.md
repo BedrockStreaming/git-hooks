@@ -15,7 +15,7 @@ To keep commit fast, but execute coke, the check-coke.sh will look for files to 
 
 Go in your project .git/hooks folder and edit (or create if not exists) a `pre-commit` file, made it executable (`chmod u+x pre-commit`), and add this line in the file :
 
-```
+```shell
 #!/bin/bash
 
 <path to this project clone>/check-coke.sh
@@ -36,7 +36,7 @@ Go in your project .git/hooks folder and edit (or create if not exists) theses f
 
 Made it executable (`chmod u+x pre-commit`), and add this line in each file :
 
-```
+```shell
 #!/bin/bash
 
 <path to this project clone>/check-composer.sh
