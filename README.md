@@ -13,7 +13,7 @@ To keep commit fast, but execute coke, the check-coke.sh will look for files to 
 
 #### Installation
 
-Go in your project .git/hooks folder and edit (or create if not exists) a `pre-commit` file, made it executable (`chmod u+x pre-commit`), and add this line in the file :
+Go in your project .git/hooks folder and edit (or create if not exists) a `pre-commit` file, made it executable (`chmod u+x pre-commit`), and add this line in the file:
 
 ```shell
 #!/bin/bash
@@ -23,18 +23,18 @@ Go in your project .git/hooks folder and edit (or create if not exists) a `pre-c
 
 ## Check-composer.sh
 
-This hooks check if composer.lock file change on git operation, and launch `composer update` command.
+This hooks check if composer.lock file change on git operation, and launch `composer install` command.
 
-This allow to always work on last vendors versions defined in your project composer.lock, even if one of your teammate update the dependancies.
+This allow to always work on last vendors versions defined in your project composer.lock, even if one of your teammate update the dependencies.
 
 ### Installation
 
-Go in your project .git/hooks folder and edit (or create if not exists) theses files :
+Go in your project .git/hooks folder and edit (or create if not exists) theses files:
 * `post-merge`
 * `post-rewrite`
 * `post-checkout`
 
-Made it executable (`chmod u+x pre-commit`), and add this line in each file :
+Made it executable (`chmod u+x pre-commit`), and add this line in each file:
 
 ```shell
 #!/bin/bash
